@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // or "ESNext" for the absolute latest, ES2020 is a good modern target
+    "module": "CommonJS", // Crucial for Node.js environments
+    "lib": [
+      "ES2020",
+      "DOM"
+    ], // Or ["ESNext", "DOM"] for latest features
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true, // Recommended for better import compatibility
+    "strict": true, // Highly recommended for type safety
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true, // To generate .d.ts files if needed
+    "noImplicitAny": false, // Based on your previous config, though `strict: true` covers this
+    "sourceMap": false
+  },
+  "include": [
+    "src/**/*.ts"
+  ], // Explicitly tell tsc what to compile
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] // Explicitly tell tsc what to ignore
+}

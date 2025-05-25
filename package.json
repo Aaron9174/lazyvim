@@ -1,0 +1,15 @@
+{
+  "name": "nvimtestingground",
+  "version": "0.0.1",
+  "description": "Testing neovim as an IDE, using lazy vim",
+  "main": "index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aaron Hebson",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}
