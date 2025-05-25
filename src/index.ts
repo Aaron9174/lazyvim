@@ -8,6 +8,7 @@ interface User {
 }
 
 // Function to greet a user
+// TODO: testing todos
 function greetUser(user: User): string {
   if (user.email) {
     return `Hello, ${user.name}! Your email is ${user.email}.`;
